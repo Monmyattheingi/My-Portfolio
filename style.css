@@ -1,0 +1,93 @@
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  scroll-behavior: smooth;
+}
+
+.section-padding { 
+    padding: 60px 0;
+ } /* tighter spacing */
+
+
+.first-section { 
+    padding-top: 120px;
+ }
+
+.main-title { font-size: 2.4rem; font-weight: 600; margin-bottom: 20px; margin-top: 20px; }
+.section-title { font-size: 2rem; font-weight: 600; }
+.about-text { font-size: 1.05rem; line-height: 1.6; margin-bottom: 16px; }
+
+/* ===== NAVBAR ===== */
+.navbar { transition: background-color 0.3s; }
+.nav-link { font-weight: 500; text-decoration: none !important; transition: color 0.3s; }
+.nav-link.active { color: #58a6ff; text-decoration: none !important; }
+.theme-btn { border: none; background: transparent; font-size: 1.2rem; }
+.navbar-brand { transition: color 0.3s; }
+
+/* ===== PROFILE ===== */
+.profile-img:hover { transform: scale(1.05); }
+.profile-img {
+  width: 230px;
+  height: 230px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid;
+  transition: transform 0.3s;
+  image-rendering: auto; /* ensures smooth scaling */
+}
+
+
+/* ===== SKILLS GRID ===== */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.skill-card {
+  background-color: rgba(255,255,255,0.05);
+  padding: 16px; border-radius: 12px; text-align: center;
+  font-weight: 600; font-size: 0.95rem; transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+.skill-card small { display: block; font-weight: 400; font-size: 0.8rem; margin-top: 4px; color: rgba(255,255,255,0.7); }
+.skill-card:hover { transform: translateY(-5px); background-color: rgba(88,166,255,0.1); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+.light-mode .skill-card { background-color: rgba(0,0,0,0.03); }
+.light-mode .skill-card small { color: rgba(0,0,0,0.7); }
+.light-mode .skill-card:hover { background-color: rgba(13,110,253,0.1); }
+.light-mode .skills-grid .skill-card:nth-child(6) { background-color: rgba(255,215,0,0.08); }
+
+/* ===== CONTACT ===== */
+.contact-list { display: flex; flex-direction: column; gap: 12px; }
+.contact-item { display: flex; align-items: center; gap: 12px; font-size: 1rem; transition: color 0.3s; }
+.contact-item i { font-size: 1.1rem; }
+.contact-item a { text-decoration: none; }
+.contact-item:hover { color: #58a6ff; }
+
+/* ===== SUBTLE SECTION SEPARATOR ===== */
+.subtle-section { background-color: rgba(255,255,255,0.02); border-radius: 12px; padding: 60px 0; }
+.dark-mode .subtle-section { background-color: rgba(255,255,255,0.03); }
+
+/* ===== FOOTER ===== */
+footer { opacity: 0.8; }
+
+/* ===== DARK MODE ===== */
+.dark-mode { background-color: #0d1117; color: #e6edf3; }
+.dark-mode .navbar, .dark-mode footer { background-color: #0d1117; border-bottom: none; }
+.dark-mode .navbar .nav-link, .dark-mode .navbar .navbar-brand { color: #e6edf3; }
+.dark-mode a { color: #58a6ff; }
+
+/* ===== LIGHT MODE ===== */
+.light-mode { background-color: #f8f9fa; color: #111; }
+.light-mode .navbar, .light-mode footer { background-color: #ffffff; border-bottom: none; }
+.light-mode .navbar .nav-link, .light-mode .navbar .navbar-brand { color: #111; }
+.light-mode a { color: #0d6efd; }
+
+/* ===== FADE-IN ===== */
+.fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 1s forwards; }
+.fade-in.delay-1 { animation-delay: 0.3s; }
+@keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+
+/* ===== MOBILE: Keep Skills + Contact side by side ===== */
+@media (max-width: 768px) {
+  #skills-contact .row { flex-wrap: nowrap; overflow-x: auto; gap: 20px; }
+  #skills-contact .col-md-6 { flex: 0 0 48%; }
+  .skills-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Myat</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-semibold" href="#">Myat</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center gap-3">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills-contact">Skills & Contact</a></li>
+        <li class="nav-item">
+          <button class="theme-btn" id="themeToggle">🌙</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="section-padding first-section subtle-section">
+  <div class="container">
+    <div class="row justify-content-center align-items-center g-5">
+      <div class="col-md-4 text-center fade-in">
+        <img 
+  src="1.jpg" 
+  srcset="assets/profile@2x.jpg 2x, assets/profile@3x.jpg 3x"
+  alt="Profile" 
+  class="profile-img">
+
+       
+      </div>
+
+      <div class="col-md-6 fade-in delay-1">
+        <h1 class="main-title">About Me</h1>
+        <p class="about-text">
+          Hello Everyone, My name is Mon Myat Theingi. I am a final year Computer Science student studying Computer Science major in UCS,Pyay.
+          I enjoy solving complex problems and building secure, efficient solutions.
+        </p>
+        <p class="about-text">
+          My approach is structured, logical, and detail-oriented, emphasizing clarity and continuous learning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS + CONTACT GRID -->
+<section id="skills-contact" class="section-padding subtle-section">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- SKILLS GRID -->
+      <div class="col-md-6 fade-in">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid mt-3">
+          <div class="skill-card">Programming <br><small>PHP, C++, Python, JavaScript, Java</small></div>
+          <div class="skill-card">AI & ML <br><small>Machine Learning, Neural Networks, Python Libraries</small></div>
+          <div class="skill-card">Web & APIs <br><small>HTML, CSS, Bootstrap, Flask, REST APIs</small></div>
+          <div class="skill-card">Systems <br><small> Command Line, OS Concepts, DS Concepts</small></div>
+          <div class="skill-card">Security <br><small>Cybersecurity Basics</small></div>
+          <div class="skill-card">Database <br><small>SQL, MySQL, PostgreSQL, MongoDB</small></div>
+          <div class="skill-card">Tools <br><small>Git, VS Code</small></div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-md-6 fade-in delay-1">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-list mt-3">
+          <div class="contact-item">
+            <i class="bi bi-person"></i>
+            <span>Mon Myat Theingi</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>+95 9780844454</span>
+          </div>
+
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>monmyattheingi288@email.com</span>
+          </div>
+
+          <div class="contact-item">
+           <!-- <i class="bi bi-linkedin"></i>
+            <a href="www.linkedin.com/in/mon-myat-theingi" target="_blank">
+              linkedin.com/in/myprofile
+            </a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  <small>© 2026 Mon Myat Theingi· University of Computer Studies, Pyay</small>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
