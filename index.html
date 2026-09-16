@@ -1,129 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Myat</title>
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mon Myat Theingi is a software engineer in Yangon building thoughtful web and AI projects.">
+  <meta name="theme-color" content="#f4f1ff">
+  <title>Mon Myat Theingi | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="dark-mode">
-
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-semibold" href="#">Myat</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navMenu">
-      <ul class="navbar-nav ms-auto align-items-center gap-3">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills-contact">Skills & Contact</a></li>
-        <li class="nav-item">
-          <button class="theme-btn" id="themeToggle">🌙</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- ABOUT -->
-<section id="about" class="section-padding first-section subtle-section">
-  <div class="container">
-    <div class="row justify-content-center align-items-center g-5">
-      <div class="col-md-4 text-center fade-in">
-        <img 
-  src="1.jpg" 
-  srcset="assets/profile@2x.jpg 2x, assets/profile@3x.jpg 3x"
-  alt="Profile" 
-  class="profile-img">
-
-       
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" aria-label="Mon Myat Theingi, home">MMT<span>✳</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span aria-hidden="true">☰</span></button>
+    <nav id="site-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#contact" class="nav-contact">Let's connect <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Software engineer · Yangon, Myanmar</p>
+        <h1 id="hero-title">Code for <span class="highlight">people.</span><br>Ideas with <span class="outline">impact.</span></h1>
+        <p class="hero-intro">Hi, I'm Mon Myat Theingi. I turn complex ideas into useful software, with a focus on full-stack development, intelligent systems, and clear user experiences.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="button button-light" href="mailto:monmyattheingi288@gmail.com">Get in touch</a></div>
+        <div class="hero-meta"><span>Final-year Computer Science student</span><span>Open to junior roles</span></div>
       </div>
-
-      <div class="col-md-6 fade-in delay-1">
-        <h1 class="main-title">About Me</h1>
-        <p class="about-text">
-          Hello Everyone, My name is Mon Myat Theingi. I am a final year Computer Science student studying Computer Science major in UCS,Pyay.
-          I enjoy solving complex problems and building secure, efficient solutions.
-        </p>
-        <p class="about-text">
-          My approach is structured, logical, and detail-oriented, emphasizing clarity and continuous learning.
-        </p>
+      <div class="hero-visual reveal">
+        <div class="portrait-backdrop"></div><div class="portrait-card"><img src="assets/profile.jpg" alt="Portrait of Mon Myat Theingi"></div>
+        <div class="hero-sticker sticker-top" aria-hidden="true">Build<br>Learn<br>Repeat ✳</div>
+        <div class="hero-sticker sticker-bottom" aria-hidden="true">Based in<br>Yangon ↗</div>
+        <span class="hero-sparkle" aria-hidden="true">✳</span>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS + CONTACT GRID -->
-<section id="skills-contact" class="section-padding subtle-section">
-  <div class="container">
-    <div class="row g-4">
-
-      <!-- SKILLS GRID -->
-      <div class="col-md-6 fade-in">
-        <h2 class="section-title">Skills</h2>
-        <div class="skills-grid mt-3">
-          <div class="skill-card">Programming <br><small>PHP, C++, Python, JavaScript, Java</small></div>
-          <div class="skill-card">AI & ML <br><small>Machine Learning, Neural Networks, Python Libraries</small></div>
-          <div class="skill-card">Web & APIs <br><small>HTML, CSS, Bootstrap, Flask, REST APIs</small></div>
-          <div class="skill-card">Systems <br><small> Command Line, OS Concepts, DS Concepts</small></div>
-          <div class="skill-card">Security <br><small>Cybersecurity Basics</small></div>
-          <div class="skill-card">Database <br><small>SQL, MySQL, PostgreSQL, MongoDB</small></div>
-          <div class="skill-card">Tools <br><small>Git, VS Code</small></div>
-        </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><span>CURIOUS BY NATURE</span><b>✳</b><span>PRACTICAL BY DESIGN</span><b>✳</b><span>ALWAYS BUILDING</span><b>✳</b><span>CURIOUS BY NATURE</span></div>
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-head reveal"><div><p class="eyebrow">01 / Selected work</p><h2 id="projects-title">Real projects.<br><span>Useful ideas.</span></h2></div><p>Academic systems built around real problems, from health information to legal research.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-clinical reveal">
+          <div class="project-top"><span>01 / Featured</span><span class="project-symbol" aria-hidden="true">✳</span></div>
+          <div class="project-art clinical-art" aria-hidden="true"><div class="art-window"><span></span><span></span><span></span><div class="art-line wide"></div><div class="art-line"></div><div class="art-pills"><i>Warfarin</i><i>Aspirin</i><i>75mg</i></div><div class="art-line short"></div></div><div class="art-badge">Clinical IE <b>↗</b></div></div>
+          <div class="project-copy"><div class="project-tags"><span>NLP</span><span>Python</span><span>Healthcare</span></div><h3>Clinical IE &amp; Drug Interaction</h3><p>A clinical NLP research project for extracting medical information and surfacing potential drug interactions.</p><div class="project-links"><a href="projects/clinical/index.html">Try browser preview ↗</a><a href="clinical-ie.html">Read case study ↗</a></div></div>
+        </article>
+        <article class="project-card project-legal reveal">
+          <div class="project-top"><span>02 / Featured</span><span class="project-symbol" aria-hidden="true">↗</span></div>
+          <div class="project-art legal-art" aria-hidden="true"><div class="legal-paper"><span>§</span><div></div><div></div><div></div><div></div></div><div class="legal-search">Search Myanmar law <b>⌕</b></div></div>
+          <div class="project-copy"><div class="project-tags"><span>RAG</span><span>PostgreSQL</span><span>Legal tech</span></div><h3>Myanmar Legal Insight</h3><p>A source-grounded retrieval project exploring clearer ways to find and explain Myanmar legal documents.</p><div class="project-links"><a href="projects/legal/index.html">Try recorded preview ↗</a><a href="legal-insight.html">Read case study ↗</a></div></div>
+        </article>
+        <article class="project-card project-small project-msme reveal"><div class="small-icon" aria-hidden="true">↗</div><div><span class="small-number">03 / Machine learning</span><h3>MSME Performance Prediction</h3><p>Prepared business data, selected features, evaluated a predictive model, and visualized results to support decisions.</p></div></article>
+        <article class="project-card project-small project-electric reveal"><div class="small-icon" aria-hidden="true">⚡</div><div><span class="small-number">04 / Web application</span><h3>Electricity Bill Management</h3><p>A Java web application for customer records, electricity billing, payments, and database management.</p></div></article>
       </div>
-
-      <!-- CONTACT -->
-      <div class="col-md-6 fade-in delay-1">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-list mt-3">
-          <div class="contact-item">
-            <i class="bi bi-person"></i>
-            <span>Mon Myat Theingi</span>
-          </div>
-
-          <div class="contact-item">
-            <i class="bi bi-telephone"></i>
-            <span>+95 9780844454</span>
-          </div>
-
-          <div class="contact-item">
-            <i class="bi bi-envelope"></i>
-            <span>monmyattheingi288@email.com</span>
-          </div>
-
-          <div class="contact-item">
-           <!-- <i class="bi bi-linkedin"></i>
-            <a href="www.linkedin.com/in/mon-myat-theingi" target="_blank">
-              linkedin.com/in/myprofile
-            </a> -->
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="text-center py-3">
-  <small>© 2026 Mon Myat Theingi· University of Computer Studies, Pyay</small>
-</footer>
-
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="main.js"></script>
+    </section>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="about-label reveal"><p class="eyebrow">02 / About me</p><span class="about-asterisk" aria-hidden="true">✳</span></div>
+      <div class="about-copy reveal"><h2 id="about-title">I like making the complicated feel <em>simple.</em></h2><p>I'm a final-year Computer Science student in Yangon. My work spans web applications, NLP, machine learning, databases, and retrieval systems. I enjoy understanding the problem first, then building software people can actually use.</p><p>I bring curiosity, careful thinking, and a willingness to learn from a professional engineering team.</p><a href="mailto:monmyattheingi288@gmail.com" class="text-link">Let's work together <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title"><div class="skills-head reveal"><p class="eyebrow">03 / Toolkit</p><h2 id="skills-title">Things I work with<span>.</span></h2></div><div class="skills-grid reveal"><div><span>01</span><h3>Languages</h3><p>Python · Java · C++ · C# · JavaScript · PHP</p></div><div><span>02</span><h3>Web</h3><p>HTML · CSS · JavaScript · Flask · J2EE · REST APIs</p></div><div><span>03</span><h3>Data &amp; AI</h3><p>Machine Learning · NLP · BERT · SQL · PostgreSQL · MongoDB</p></div><div><span>04</span><h3>Engineering</h3><p>OOP · SDLC · Git · System analysis · Database design</p></div></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="contact-content reveal"><p class="eyebrow"><span class="status-dot"></span> 04 / Let's connect</p><h2 id="contact-title">Have an idea?<br><span>Let's build it.</span></h2><p>I'm open to junior software roles and conversations about useful technology.</p><a class="contact-button" href="mailto:monmyattheingi288@gmail.com">Say hello <span aria-hidden="true">↗</span></a></div><span class="contact-decoration" aria-hidden="true">✳</span></section>
+  </main>
+  <footer><div><a class="footer-logo" href="#top">MMT<span>✳</span></a><p>Mon Myat Theingi · Yangon, Myanmar</p></div><div class="footer-links"><a href="https://github.com/Monmyattheingi" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mon-myat-theingi/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="tel:+959780844454">Call ↗</a></div><span>© 2026 Mon Myat Theingi</span></footer>
+  <script src="main.js"></script>
 </body>
 </html>
