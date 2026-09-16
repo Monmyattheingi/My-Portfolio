@@ -1,31 +1,25 @@
-const toggleBtn = document.getElementById("themeToggle");
-const navLinks = document.querySelectorAll(".nav-link");
-const navbarBrand = document.querySelector(".navbar-brand");
+const menuButton = document.querySelector('.menu-button');
+const nav = document.querySelector('#site-nav');
 
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("light-mode");
-  document.body.classList.toggle("dark-mode");
-
-  toggleBtn.textContent =
-    document.body.classList.contains("light-mode") ? "☀️" : "🌙";
-
-  navLinks.forEach(link => {
-    link.style.color = document.body.classList.contains("light-mode") ? '#111' : '#e6edf3';
-  });
-
-  navbarBrand.style.color = document.body.classList.contains("light-mode") ? '#111' : '#e6edf3';
+menuButton.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(open));
 });
 
-// Active nav-link on scroll
-const sections = document.querySelectorAll("section");
-window.addEventListener("scroll", () => {
-  let current = "";
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120;
-    if (pageYOffset >= sectionTop) current = section.getAttribute("id");
-  });
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) link.classList.add("active");
-  });
-});
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+  nav.classList.remove('open');
+  menuButton.setAttribute('aria-expanded', 'false');
+}));
+
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('js-ready');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+}
