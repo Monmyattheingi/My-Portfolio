@@ -156,3 +156,8 @@ html{scroll-padding-top:92px}
 .certificate-link{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);padding:9px;transition:transform .2s}.certificate-link:hover{transform:translateY(-3px)}.certificate-link img{width:100%;aspect-ratio:1.35;object-fit:cover;object-position:center}.certificate-link span{display:block;padding:11px 3px 3px;font-size:11px;font-weight:800;color:var(--blue)}
 @media(max-width:900px){.experience-heading{display:block}.experience-card{grid-template-columns:150px 1fr}.certificate-link{grid-column:2;max-width:340px}}
 @media(max-width:650px){.experience-section{padding-top:58px;padding-bottom:58px}.experience-card{grid-template-columns:1fr;gap:25px}.certificate-link{grid-column:auto}.experience-heading h2{font-size:44px}}
+
+/* Avoid doubled spacing between experience and about */
+.experience-section{padding-bottom:26px}
+.about-section{padding-top:44px}
+@media(max-width:650px){.experience-section{padding-bottom:22px}.about-section{padding-top:38px}}
