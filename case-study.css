@@ -18,7 +18,7 @@ body { background: var(--paper); }
   grid-template-columns: minmax(0, 1.15fr) minmax(300px, .65fr);
   gap: clamp(36px, 6vw, 84px);
   align-items: center;
-  padding: clamp(54px, 7vw, 82px) 0 42px;
+  padding: clamp(34px, 4vw, 50px) 0 38px;
 }
 .case-hero > * { min-width: 0; }
 .case-kicker,.section-number,.mini-label {
@@ -91,7 +91,14 @@ body { background: var(--paper); }
   padding: clamp(52px, 6vw, 76px) 0;
   border-top: 1px solid var(--line);
 }
-.case-section:first-of-type { border-top: 0; }
+.case-hero + .case-section {
+  align-items: center;
+  padding-top: clamp(38px, 4vw, 50px);
+  padding-bottom: clamp(38px, 4vw, 50px);
+  border-top: 0;
+}
+.case-hero + .case-section .section-heading,
+.case-hero + .case-section .section-body { align-self: center; }
 .section-heading { max-width: 440px; }
 .section-number { margin-bottom: 15px; }
 .case-section h2 { margin: 0; font-size: clamp(34px, 4.2vw, 58px); line-height: 1.02; }
